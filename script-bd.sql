@@ -4,5 +4,5 @@ CREATE TABLE escola (
   nome varchar(255),
   endereco varchar(255),
   cnpj varchar (18),
-  telefone varchar (18)
+  telefone varchar (20)
 );
