@@ -58,6 +58,16 @@ INSERT INTO historico_presenca (data, hora_entrada, hora_saida, entrada_aluno, s
 ('2026-02-04', '2026-02-04 07:00:00', '2026-02-04 12:00:00', NULL, NULL, 'Ausente', 3);
 
 
+CREATE TABLE disciplina (
+    id_disciplina SERIAL PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    carga_horaria INT NOT NULL
+);
+
+INSERT INTO disciplina (nome, carga_horaria) VALUES
+('Matemática', 160),
+('Português', 120),
+('Ciências', 80);
 
 
 
