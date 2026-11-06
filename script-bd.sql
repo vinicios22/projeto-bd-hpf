@@ -132,3 +132,19 @@ INSERT INTO turma_disciplina_professor (id_disciplina, id_professor) VALUES
 (1, 1),
 (2, 2),
 (3, 3);
+
+
+CREATE TABLE responsavel (
+  id_responsavel SERIAL PRIMARY KEY,
+  nome VARCHAR(255) NOT NULL,
+  cpf VARCHAR(14) NOT NULL,
+  telefone VARCHAR (20) NOT NULL,
+  email VARCHAR(255)
+);
+
+INSERT INTO responsavel (nome, cpf, telefone, email) VALUES
+('Paulo Santos', '777.777.777-77', '(45) 99999-1001', 'paulo@example.com'),
+('Fernanda Costa', '888.888.888-88', '(45) 99999-1002', 'fernanda@example.com'),
+('Norberto Oliveira', '999.999.999-99', '(45) 99999-1003', 'norberto@example.com');
+
+
